@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dantri-Bootstrap</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="container">
+        <div class="header-top d-flex align-items-center justify-content-between ">
+            <div class=" d-flex gap-5 align-items-center justify-content-between ">
+                <div class="nav-toggle">
+                    <button class="rounded me-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header-logo">
+                    <h1 class="d-flex align-items-center justify-content-center">
+                        <a href="#">
+                            <img src="https://cdnweb.dantri.com.vn/dist/static-logo.1-0-1.742f36bc45f3443d0e59.svg"
+                                alt="DanTri.com" width="132">
+                        </a>
+                    </h1>
+                </div>
+                <div class="login-btn ms-5 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                      </svg>
+                </div>
+                <div data-module="weather-header" data-date_time_today="Thứ 2, 10/06/2024" class="weather-placeholder">
+                    <div class="IGv0m1128tJ5jFbLBker UJHwOgU3bHCGwFvnmoEg">
+                        <div><span class="zshi2lxvbjGHFsgp1DNy V9Jp_oqNM6h30ard8Zgd">TP. Hồ Chí Minh</span><span
+                                class="zshi2lxvbjGHFsgp1DNy wa8hsUSFvhh4lLAnvrBY">Thứ 2, 10/06/2024</span></div>
+                        <div class="ZfWACAKknj1VfFK4AMkD"></div><svg viewBox="0 0 100 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="24" height="24">
+                            <path d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Z"
+                                fill="url(#02d_svg__a)"></path>
+                            <path
+                                d="M59.375 100c13.807 0 25-11.193 25-25s-11.193-25-25-25-25 11.193-25 25 11.193 25 25 25Z"
+                                fill="#E1EFEF" fill-opacity="0.8"></path>
+                            <path
+                                d="M40.625 68.75c-13.828 0-25 11.172-25 25 0 3.438 2.813 6.25 6.25 6.25h37.5c3.438 0 6.25-2.813 6.25-6.25 0-13.828-11.172-25-25-25Z"
+                                fill="#EDF7F7"></path>
+                            <defs>
+                                <linearGradient id="02d_svg__a" x1="100" y1="50" x2="0" y2="50"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F7BC00"></stop>
+                                    <stop offset="1" stop-color="#F5CC00"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg><span class="zshi2lxvbjGHFsgp1DNy urW019Jm00gsf0Pq8nW2">30°C</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hnav">
+                <div class="d-flex">
+                    <a href="#"
+                    class="international d-flex align-items-center justify-content-center text-decoration-none mx-2 text-dark">
+                    <img class="mx-1"
+                        src="https://cdnweb.dantri.com.vn/dist/static-dansinh-logo.1-0-1.9fc9db9740e6e6104af7.svg"
+                        alt="Dan sinh" width="19">
+                    <span class="title">Dân sinh</span>
+                </a>
+                <a href="#"
+                    class="international d-flex align-items-center justify-content-center text-decoration-none mx-2 text-dark">
+                    <img class="mx-1"
+                        src="https://cdnweb.dantri.com.vn/dist/static-fica-logo.1-0-1.2435f041ebf869641575.jpg"
+                        alt="Fica" width="26">
+                    <span class="title">Fica</span>
+                </a>
+                <a href="#"
+                    class="international d-flex align-items-center justify-content-center text-decoration-none mx-2 text-dark">
+                    <img class="mx-1"
+                        src="https://cdnweb.dantri.com.vn/dist/static-avatar-default.1-0-1.b474c6ca2d1abee5b89b.png"
+                        alt="DTNews" width="26">
+                    <span class="title">DTNews</span>
+                </a>
+                </div>
+            </div>
+            <div class="header-area ">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="auth-placeholder mx-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                        </svg>
+                        Đăng nhập
+                        </button>
+                    </div>
+                    <div>
+                        <a class="search-link" href="/tim-kiem.htm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#222" class="bi bi-search"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="menu container bg-white">
+        <ol class="menu-wrap">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                        class="bi bi-house-door" viewBox="0 0 18 18">
+                        <path
+                            d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
+                    </svg>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">MỚI NHẤT</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">VIDEO</a>
+            </li>
+            <li class="nav-item menu">
+                <a href="#" class="nav-link">XÃ HỘI</a>
+                    <ol class="sub-menu bg-light">
+                        <li class="sub-menu-item"><a href="#" class="link">CHÍNH TRỊ</a></li>
+                        <li class="sub-menu-item"><a href="#" class="link">HỌC TẬP BÁC</a></li>
+                        <li class="sub-menu-item"><a href="#" class="link">KHÁT VỌNG HÙNG CƯỜNG</a></li>
+                        <li class="sub-menu-item"><a href="#" class="link">MÔI TRƯỜNG</a></li>
+                        <li class="sub-menu-item"><a href="#" class="link">GIAO THÔNG</a></li>
+                        <li class="sub-menu-item"><a href="#" class="link">NÓNG TRÊN MẠNG</a></li>
+                        <li class="sub-menu-item last"><a href="#" class="link">SÁNG KIẾN AN TOÀN GIAO THÔNG</a></li>
+                    </ol>
+            </li>
+            <li class="nav-item menu">
+                <a href="#" class="nav-link">THẾ GIỚI</a>
+                <ol class="sub-menu bg-light">
+                    <li class="sub-menu-item"><a href="#" class="link">CHÍNH TRỊ</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">HỌC TẬP BÁC</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">KHÁT VỌNG HÙNG CƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">MÔI TRƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">GIAO THÔNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">NÓNG TRÊN MẠNG</a></li>
+                    <li class="sub-menu-item last"><a href="#" class="link">SÁNG KIẾN AN TOÀN GIAO THÔNG</a></li>
+                </ol>
+            </li>
+            <li class="nav-item menu">
+                <a href="#" class="nav-link">KINH DOANH</a>
+                <ol class="sub-menu bg-light">
+                    <li class="sub-menu-item"><a href="#" class="link">CHÍNH TRỊ</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">HỌC TẬP BÁC</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">KHÁT VỌNG HÙNG CƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">MÔI TRƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">GIAO THÔNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">NÓNG TRÊN MẠNG</a></li>
+                    <li class="sub-menu-item last"><a href="#" class="link">SÁNG KIẾN AN TOÀN GIAO THÔNG</a></li>
+                </ol>
+            </li>
+            <li class="nav-item menu">
+                <a href="#" class="nav-link">BẤT ĐỘNG SẢN</a>
+                <ol class="sub-menu bg-light">
+                    <li class="sub-menu-item"><a href="#" class="link">CHÍNH TRỊ</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">HỌC TẬP BÁC</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">KHÁT VỌNG HÙNG CƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">MÔI TRƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">GIAO THÔNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">NÓNG TRÊN MẠNG</a></li>
+                    <li class="sub-menu-item last"><a href="#" class="link">SÁNG KIẾN AN TOÀN GIAO THÔNG</a></li>
+                </ol>
+            </li>
+            <li class="nav-item menu">
+                <a href="#" class="nav-link">THỂ THAO</a>
+                <ol class="sub-menu bg-light">
+                    <li class="sub-menu-item"><a href="#" class="link">CHÍNH TRỊ</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">HỌC TẬP BÁC</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">KHÁT VỌNG HÙNG CƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">MÔI TRƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">GIAO THÔNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">NÓNG TRÊN MẠNG</a></li>
+                    <li class="sub-menu-item last"><a href="#" class="link">SÁNG KIẾN AN TOÀN GIAO THÔNG</a></li>
+                </ol>
+            </li>
+            <li class="nav-item menu">
+                <a href="#" class="nav-link">VIỆC LÀM</a>
+                <ol class="sub-menu bg-light">
+                    <li class="sub-menu-item"><a href="#" class="link">CHÍNH TRỊ</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">HỌC TẬP BÁC</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">KHÁT VỌNG HÙNG CƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">MÔI TRƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">GIAO THÔNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">NÓNG TRÊN MẠNG</a></li>
+                    <li class="sub-menu-item last"><a href="#" class="link">SÁNG KIẾN AN TOÀN GIAO THÔNG</a></li>
+                </ol>
+            </li>
+            <li class="nav-item menu">
+                <a href="#" class="nav-link">NHÂN ÁI</a>
+                <ol class="sub-menu bg-light">
+                    <li class="sub-menu-item"><a href="#" class="link">CHÍNH TRỊ</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">HỌC TẬP BÁC</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">KHÁT VỌNG HÙNG CƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">MÔI TRƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">GIAO THÔNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">NÓNG TRÊN MẠNG</a></li>
+                    <li class="sub-menu-item last"><a href="#" class="link">SÁNG KIẾN AN TOÀN GIAO THÔNG</a></li>
+                </ol>
+            </li>
+            <li class="nav-item menu">
+                <a href="#" class="nav-link">SỨC KHỎE</a>
+                <ol class="sub-menu bg-light">
+                    <li class="sub-menu-item"><a href="#" class="link">CHÍNH TRỊ</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">HỌC TẬP BÁC</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">KHÁT VỌNG HÙNG CƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">MÔI TRƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">GIAO THÔNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">NÓNG TRÊN MẠNG</a></li>
+                    <li class="sub-menu-item last"><a href="#" class="link">SÁNG KIẾN AN TOÀN GIAO THÔNG</a></li>
+                </ol>
+            </li>
+            <li class="nav-item menu">
+                <a href="#" class="nav-link">VĂN HÓA</a>
+                <ol class="sub-menu bg-light">
+                    <li class="sub-menu-item"><a href="#" class="link">CHÍNH TRỊ</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">HỌC TẬP BÁC</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">KHÁT VỌNG HÙNG CƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">MÔI TRƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">GIAO THÔNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">NÓNG TRÊN MẠNG</a></li>
+                    <li class="sub-menu-item last"><a href="#" class="link">SÁNG KIẾN AN TOÀN GIAO THÔNG</a></li>
+                </ol>
+            </li>
+            <li class="nav-item menu">
+                <a href="#" class="nav-link">GIẢI TRÍ</a>
+                <ol class="sub-menu bg-light">
+                    <li class="sub-menu-item"><a href="#" class="link">CHÍNH TRỊ</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">HỌC TẬP BÁC</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">KHÁT VỌNG HÙNG CƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">MÔI TRƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">GIAO THÔNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">NÓNG TRÊN MẠNG</a></li>
+                    <li class="sub-menu-item last"><a href="#" class="link">SÁNG KIẾN AN TOÀN GIAO THÔNG</a></li>
+                </ol>
+            </li>
+            <li class="nav-item menu">
+                <a href="#" class="nav-link">XE ++</a>
+                <ol class="sub-menu bg-light">
+                    <li class="sub-menu-item"><a href="#" class="link">CHÍNH TRỊ</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">HỌC TẬP BÁC</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">KHÁT VỌNG HÙNG CƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">MÔI TRƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">GIAO THÔNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">NÓNG TRÊN MẠNG</a></li>
+                    <li class="sub-menu-item last"><a href="#" class="link">SÁNG KIẾN AN TOÀN GIAO THÔNG</a></li>
+                </ol>
+            </li>
+            <li class="nav-item menu">
+                <a href="#" class="nav-link">SỨC MẠNH SỐ</a>
+                <ol class="sub-menu bg-light">
+                    <li class="sub-menu-item"><a href="#" class="link">CHÍNH TRỊ</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">HỌC TẬP BÁC</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">KHÁT VỌNG HÙNG CƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">MÔI TRƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">GIAO THÔNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">NÓNG TRÊN MẠNG</a></li>
+                    <li class="sub-menu-item last"><a href="#" class="link">SÁNG KIẾN AN TOÀN GIAO THÔNG</a></li>
+                </ol>
+            </li>
+            <li class="nav-item menu">
+                <a href="#" class="nav-link">GIÁO DỤC</a>
+                <ol class="sub-menu bg-light">
+                    <li class="sub-menu-item"><a href="#" class="link">CHÍNH TRỊ</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">HỌC TẬP BÁC</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">KHÁT VỌNG HÙNG CƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">MÔI TRƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">GIAO THÔNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">NÓNG TRÊN MẠNG</a></li>
+                    <li class="sub-menu-item last"><a href="#" class="link">SÁNG KIẾN AN TOÀN GIAO THÔNG</a></li>
+                </ol>
+            </li>
+            <li class="nav-item menu">
+                <a href="#" class="nav-link">AN SINH</a>
+                <ol class="sub-menu bg-light">
+                    <li class="sub-menu-item"><a href="#" class="link">CHÍNH TRỊ</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">HỌC TẬP BÁC</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">KHÁT VỌNG HÙNG CƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">MÔI TRƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">GIAO THÔNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">NÓNG TRÊN MẠNG</a></li>
+                    <li class="sub-menu-item last"><a href="#" class="link">SÁNG KIẾN AN TOÀN GIAO THÔNG</a></li>
+                </ol>
+            </li>
+            <li class="nav-item menu">
+                <a href="#" class="nav-link">PHÁP LUẬT</a>
+                <ol class="sub-menu last bg-light">
+                    <li class="sub-menu-item"><a href="#" class="link">HỒ SƠ VỤ ÁN</a></li>
+                    <li class="sub-menu-item last"><a href="#" class="link">PHÁP ĐÌNH</a></li>
+                </ol>
+            </li>
+            <li class="nav-item menu">
+                <a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                        fill="currentColor" class="bi bi-three-dots" viewBox="0 0 18 18">
+                        <path
+                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                    </svg></a>
+            </li>
+        </ol>
+    </nav>
+    <main class="body container py-2">
+        <div class="row mb-3 pb-2">
+            <div class="col-md-3 col-12 pe-3">
+                <div class="border-bottom mb-2 mt-3 pb-2">
+                    <a href="#" class="text-decoration-none text-dark link">
+                        <img class="thumb" width="100%"
+                            src="image/4481589148258365856776238863701584087816516n-edited-1717995560473.webp" alt="">
+                        <h5 class="title">Ô tô mắc kẹt trên phố, nhà cửa ngập trong "biển nước" ở TP Hà Giang</h5>
+                    </a>
+                </div>
+                <div class="my-2 py-2">
+                    <a href="#" class="text-decoration-none text-dark link">
+                        <img class="thumb" width="100%"
+                            src="image/4481589148258365856776238863701584087816516n-edited-1717995560473.webp" alt="">
+                        <h5 class="title">Ô tô mắc kẹt trên phố, nhà cửa ngập trong "biển nước" ở TP Hà Giang</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="part col-md-6 col-12 my-3 border border-top-0 border-bottom-0 ps-3 pe-3 ">
+                <a class="link" href="#">
+                    <img class="thumb mb-3" width="100%" src="image/thu-tuong-pham-minh-chinh-edited-1718003185753.webp"
+                        alt="">
+                    <h3 class="title">Từ 1/7, VNeID là tài khoản duy nhất để người dân làm thủ tục hành chính</h3>
+                    <p class="excerpt">Nhấn mạnh việc đơn giản hóa, tái cấu trúc quy trình thủ tục hành chính, Thủ tướng
+                        yêu cầu bảo đảm các
+                        điều kiện để từ ngày 1/7, VNeID là tài khoản duy nhất để người dân thực hiện thủ tục hành chính.
+                    </p>
+                </a>
+            </div>
+            <div class="col-md-3 col-12 ps-3">
+                <div class="border-bottom my-3 pb-3">
+                    <a class="link d-flex" href="#">
+                        <h5 class="title col-md-7">Chủ tịch nước Tô Lâm làm việc với Tỉnh ủy Cao Bằng</h5>
+                        <img class="thumb mx-2 col-md-5 px-2 "
+                            src="image/chu-tich-nuoc-to-lam-edited-1718028084883.webp" alt="">
+                    </a>
+                </div>
+                <div class="border-bottom my-3 pb-3 ">
+                    <a class="d-flex link" href="#">
+                        <h5 class="title col-md-7">Chủ tịch nước Tô Lâm làm việc với Tỉnh ủy Cao Bằng</h5>
+                        <img class="thumb mx-2 col-md-5 px-2 "
+                            src="image/chu-tich-nuoc-to-lam-edited-1718028084883.webp" alt="">
+                    </a>
+                </div>
+                <div class="border-bottom my-3 pb-3">
+                    <a class=" d-flex link" href="#">
+                        <h5 class="title col-md-7">Chủ tịch nước Tô Lâm làm việc với Tỉnh ủy Cao Bằng</h5>
+                        <img class="thumb mx-2 col-md-5 px-2 "
+                            src="image/chu-tich-nuoc-to-lam-edited-1718028084883.webp" alt="">
+                    </a>
+                </div>
+                <div class="my-3 pb-3 d-flex">
+                    <div class="col-md-8">
+                        <a class="link" href="#">
+                            <p class="fw-bold fa-Times">Tâm điểm</p>
+                            <h5 class="title mb-5">"Gia cảnh" và thuế thu nhập cá nhân</h5>
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chat-square-text" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                    <path
+                                        d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
+                                </svg>
+                                15
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="thumb rounded-circle mb-2" src="image/untitled-project-crop-1717417423858.webp"
+                            alt="">
+                        <p class="text-center">ĐỨC NGUYỄN</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-3 mx-2">
+        </div>
+        <div class="row mb-3 pb-3">
+            <div class="col-md-3 col-12">
+                <div class="border-bottom pe-1 mb-3 pb-3">
+                    <h4 class="">DÂN TRÍ <span class="text-success">SPOTLIGHT</span></h4>
+                    <a class="link" href="#"><img class="thumb w-100" src="image/7-1718017728314.webp" alt=""></a>
+                    <a class="link" href="#">
+                        <h5><span class="text-success">D</span>News</h5>
+                    </a>
+                    <a href="#" class="link">
+                        <h5 class="title">Cách Thái Lan khiến du khách chơi xuyên đêm, "vét sạch tới đồng cuối cùng"
+                        </h5>
+                    </a>
+                </div>
+                <div class="">
+                    <h4 class="">DÂN TRÍ <span class="text-success">SPOTLIGHT</span></h4>
+                    <a class="link" href="#"><img class="thumb w-100" src="image/7-1718017728314.webp" alt=""></a>
+                    <a class="link" href="#">
+                        <h5><span class="text-success">D</span>News</h5>
+                    </a>
+                    <a href="#" class="link">
+                        <h5 class="title">Cách Thái Lan khiến du khách chơi xuyên đêm, "vét sạch tới đồng cuối cùng"
+                        </h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 px-3 mt-2 border border-bottom-0 border-top-0 ">
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-4 pe-2" href="#"><img class="thumb w-100"
+                            src="image/dsc8919-1718088948884.webp" alt=""></a>
+                    <a class="link col-md-8" href="#">
+                        <h5 class="title">Thượng tướng Lương Tam Quang giữ chức Bí thư Đảng ủy Công an Trung ương</h5>
+                    </a>
+                </div>
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-4 pe-2" href="#"><img class="thumb w-100"
+                            src="image/dsc8919-1718088948884.webp" alt=""></a>
+                    <a class="link col-md-8" href="#">
+                        <h5 class="title">Thượng tướng Lương Tam Quang giữ chức Bí thư Đảng ủy Công an Trung ương</h5>
+                    </a>
+                </div>
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-4 pe-2" href="#"><img class="thumb w-100"
+                            src="image/dsc8919-1718088948884.webp" alt=""></a>
+                    <a class="link col-md-8" href="#">
+                        <h5 class="title">Thượng tướng Lương Tam Quang giữ chức Bí thư Đảng ủy Công an Trung ương</h5>
+                    </a>
+                </div>
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-4 pe-2" href="#"><img class="thumb w-100"
+                            src="image/dsc8919-1718088948884.webp" alt=""></a>
+                    <a class="link col-md-8" href="#">
+                        <h5 class="title">Thượng tướng Lương Tam Quang giữ chức Bí thư Đảng ủy Công an Trung ương</h5>
+                    </a>
+                </div>
+                <div class="d-flex ">
+                    <a class="link col-md-4 pe-2" href="#"><img class="thumb w-100"
+                            src="image/dsc8919-1718088948884.webp" alt=""></a>
+                    <a class="link col-md-8" href="#">
+                        <h5 class="title">Thượng tướng Lương Tam Quang giữ chức Bí thư Đảng ủy Công an Trung ương</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-12 px-3 ">
+                <a class="link" href="#"><img class="thumb w-100" src="image/Screenshot 2024-06-11 144649.png"
+                        alt=""></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-12">
+                <a href="#" class="link"><img class="mt-2 w-100" src="image/Screenshot 2024-06-11 152052.png"
+                        alt=""></a>
+            </div>
+            <div class="col-md-6 col-12 px-3 pb-3">
+                <h4>DÂN TRÍ <span class="text-warning">CÁ NHÂN HÓA</span></h4>
+                <div class="d-flex mb-3">
+                    <a class="link thumb col-md-4 pe-2" href="#"><img class="thumb w-100"
+                            src="image/240611vhop3pr-4-1-1du-an-nao-dang-do-ni-cho-cong-dong-nguoi-nuoc-ngoaia1-crop-1718080431688.webp"
+                            alt=""></a>
+                    <a class="link col-md-8" href="#">
+                        <h5 class="title">Những tiện ích cho người nước ngoài ở Ocean City</h5>
+                    </a>
+                </div>
+                <div class="d-flex">
+                    <a class="link thumb col-md-4 pe-2" href="#"><img class="thumb w-100"
+                            src="image/240611vhop3pr-4-1-1du-an-nao-dang-do-ni-cho-cong-dong-nguoi-nuoc-ngoaia1-crop-1718080431688.webp"
+                            alt=""></a>
+                    <a class="link col-md-8" href="#">
+                        <h5 class="title">Những tiện ích cho người nước ngoài ở Ocean City</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <a href="#"> <img class="thumb mt-2 w-100" src="image/Screenshot 2024-06-11 152052.png" alt=""></a>
+            </div>
+            <hr class="mx-2">
+        </div>
+        <div class="row mb-5 ">
+            <div class="col-md-6 col-12 pe-3 border-end">
+                <div class="d-flex mb-3 py-3 border-bottom">
+                    <a class="link col-md-5" href="#"><img class="thumb w-100"
+                            src="image/thue-xe-dua-don-hoc-sinh-crop-1718081364208.webp" alt=""></a>
+                    <div class="col-md-7 px-3">
+                        <a href="#" class="link">
+                            <h4 class="title">Đề xuất ô tô đưa đón học sinh phải có camera và cảnh báo chống quên trẻ
+                            </h4>
+                            <p class="experct text-secondary">Với xe đưa đón học sinh và trẻ mầm non, Ủy ban Quốc phòng
+                                - An ninh đề
+                                nghị phải có thiết bị ghi...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-5" href="#"><img class="thumb w-100"
+                            src="image/thue-xe-dua-don-hoc-sinh-crop-1718081364208.webp" alt=""></a>
+                    <div class="col-md-7 px-3">
+                        <a href="#" class="link">
+                            <h4 class="title">Đề xuất ô tô đưa đón học sinh phải có camera và cảnh báo chống quên trẻ
+                            </h4>
+                            <p class="experct text-secondary">Với xe đưa đón học sinh và trẻ mầm non, Ủy ban Quốc phòng
+                                - An ninh đề
+                                nghị phải có thiết bị ghi...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-5" href="#"><img class="thumb w-100"
+                            src="image/thue-xe-dua-don-hoc-sinh-crop-1718081364208.webp" alt=""></a>
+                    <div class="col-md-7 px-3">
+                        <a href="#" class="link">
+                            <h4 class="title">Đề xuất ô tô đưa đón học sinh phải có camera và cảnh báo chống quên trẻ
+                            </h4>
+                            <p class="experct text-secondary">Với xe đưa đón học sinh và trẻ mầm non, Ủy ban Quốc phòng
+                                - An ninh đề
+                                nghị phải có thiết bị ghi...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-5" href="#"><img class="thumb w-100"
+                            src="image/thue-xe-dua-don-hoc-sinh-crop-1718081364208.webp" alt=""></a>
+                    <div class="col-md-7 px-3">
+                        <a href="#" class="link">
+                            <h4 class="title">Đề xuất ô tô đưa đón học sinh phải có camera và cảnh báo chống quên trẻ
+                            </h4>
+                            <p class="experct text-secondary">Với xe đưa đón học sinh và trẻ mầm non, Ủy ban Quốc phòng
+                                - An ninh đề
+                                nghị phải có thiết bị ghi...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-5" href="#"><img class="thumb w-100"
+                            src="image/thue-xe-dua-don-hoc-sinh-crop-1718081364208.webp" alt=""></a>
+                    <div class="col-md-7 px-3">
+                        <a href="#" class="link">
+                            <h4 class="title">Đề xuất ô tô đưa đón học sinh phải có camera và cảnh báo chống quên trẻ
+                            </h4>
+                            <p class="experct text-secondary">Với xe đưa đón học sinh và trẻ mầm non, Ủy ban Quốc phòng
+                                - An ninh đề
+                                nghị phải có thiết bị ghi...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-5" href="#"><img class="thumb w-100"
+                            src="image/thue-xe-dua-don-hoc-sinh-crop-1718081364208.webp" alt=""></a>
+                    <div class="col-md-7 px-3">
+                        <a href="#" class="link">
+                            <h4 class="title">Đề xuất ô tô đưa đón học sinh phải có camera và cảnh báo chống quên trẻ
+                            </h4>
+                            <p class="experct text-secondary">Với xe đưa đón học sinh và trẻ mầm non, Ủy ban Quốc phòng
+                                - An ninh đề
+                                nghị phải có thiết bị ghi...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-5" href="#"><img class="thumb w-100"
+                            src="image/thue-xe-dua-don-hoc-sinh-crop-1718081364208.webp" alt=""></a>
+                    <div class="col-md-7 px-3">
+                        <a href="#" class="link">
+                            <h4 class="title">Đề xuất ô tô đưa đón học sinh phải có camera và cảnh báo chống quên trẻ
+                            </h4>
+                            <p class="experct text-secondary">Với xe đưa đón học sinh và trẻ mầm non, Ủy ban Quốc phòng
+                                - An ninh đề
+                                nghị phải có thiết bị ghi...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-5" href="#"><img class="thumb w-100"
+                            src="image/thue-xe-dua-don-hoc-sinh-crop-1718081364208.webp" alt=""></a>
+                    <div class="col-md-7 px-3">
+                        <a href="#" class="link">
+                            <h4 class="title">Đề xuất ô tô đưa đón học sinh phải có camera và cảnh báo chống quên trẻ
+                            </h4>
+                            <p class="experct text-secondary">Với xe đưa đón học sinh và trẻ mầm non, Ủy ban Quốc phòng
+                                - An ninh đề
+                                nghị phải có thiết bị ghi...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-5" href="#"><img class="thumb w-100"
+                            src="image/thue-xe-dua-don-hoc-sinh-crop-1718081364208.webp" alt=""></a>
+                    <div class="col-md-7 px-3">
+                        <a href="#" class="link">
+                            <h4 class="title">Đề xuất ô tô đưa đón học sinh phải có camera và cảnh báo chống quên trẻ
+                            </h4>
+                            <p class="experct text-secondary">Với xe đưa đón học sinh và trẻ mầm non, Ủy ban Quốc phòng
+                                - An ninh đề
+                                nghị phải có thiết bị ghi...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-5" href="#"><img class="thumb w-100"
+                            src="image/thue-xe-dua-don-hoc-sinh-crop-1718081364208.webp" alt=""></a>
+                    <div class="col-md-7 px-3">
+                        <a href="#" class="link">
+                            <h4 class="title">Đề xuất ô tô đưa đón học sinh phải có camera và cảnh báo chống quên trẻ
+                            </h4>
+                            <p class="experct text-secondary">Với xe đưa đón học sinh và trẻ mầm non, Ủy ban Quốc phòng
+                                - An ninh đề
+                                nghị phải có thiết bị ghi...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-5" href="#"><img class="thumb w-100"
+                            src="image/thue-xe-dua-don-hoc-sinh-crop-1718081364208.webp" alt=""></a>
+                    <div class="col-md-7 px-3">
+                        <a href="#" class="link">
+                            <h4 class="title">Đề xuất ô tô đưa đón học sinh phải có camera và cảnh báo chống quên trẻ
+                            </h4>
+                            <p class="experct text-secondary">Với xe đưa đón học sinh và trẻ mầm non, Ủy ban Quốc phòng
+                                - An ninh đề
+                                nghị phải có thiết bị ghi...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-5" href="#"><img class="thumb w-100"
+                            src="image/thue-xe-dua-don-hoc-sinh-crop-1718081364208.webp" alt=""></a>
+                    <div class="col-md-7 px-3">
+                        <a href="#" class="link">
+                            <h4 class="title">Đề xuất ô tô đưa đón học sinh phải có camera và cảnh báo chống quên trẻ
+                            </h4>
+                            <p class="experct text-secondary">Với xe đưa đón học sinh và trẻ mầm non, Ủy ban Quốc phòng
+                                - An ninh đề
+                                nghị phải có thiết bị ghi...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-5" href="#"><img class="thumb w-100"
+                            src="image/thue-xe-dua-don-hoc-sinh-crop-1718081364208.webp" alt=""></a>
+                    <div class="col-md-7 px-3">
+                        <a href="#" class="link">
+                            <h4 class="title">Đề xuất ô tô đưa đón học sinh phải có camera và cảnh báo chống quên trẻ
+                            </h4>
+                            <p class="experct text-secondary">Với xe đưa đón học sinh và trẻ mầm non, Ủy ban Quốc phòng
+                                - An ninh đề
+                                nghị phải có thiết bị ghi...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex mb-3 pb-3 border-bottom">
+                    <a class="link col-md-5" href="#"><img class="thumb w-100"
+                            src="image/thue-xe-dua-don-hoc-sinh-crop-1718081364208.webp" alt=""></a>
+                    <div class="col-md-7 px-3">
+                        <a href="#" class="link">
+                            <h4 class="title">Đề xuất ô tô đưa đón học sinh phải có camera và cảnh báo chống quên trẻ
+                            </h4>
+                            <p class="experct text-secondary">Với xe đưa đón học sinh và trẻ mầm non, Ủy ban Quốc phòng
+                                - An ninh đề
+                                nghị phải có thiết bị ghi...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex mb-3 pb-3">
+                    <a class="link col-md-5" href="#"><img class="thumb w-100"
+                            src="image/thue-xe-dua-don-hoc-sinh-crop-1718081364208.webp" alt=""></a>
+                    <div class="col-md-7 px-3">
+                        <a href="#" class="link">
+                            <h4 class="title">Đề xuất ô tô đưa đón học sinh phải có camera và cảnh báo chống quên trẻ
+                            </h4>
+                            <p class="experct text-secondary">Với xe đưa đón học sinh và trẻ mầm non, Ủy ban Quốc phòng
+                                - An ninh đề
+                                nghị phải có thiết bị ghi...</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 ps-3 pt-3">
+                <div class="mb-3">
+                    <div class="d-flex">
+                        <a href="#" class="link">
+                            <h5 class="hnav-title">XÃ HỘI</h5>
+                        </a>
+                        <ul class="d-flex list-unstyled align-items-end">
+                            <li class="ms-4">
+                                <a class="link" href="#">
+                                    <p class="nav-title">Chính trị</p>
+                                </a>
+                            </li>
+                            <li class="ms-4">
+                                <a class="link" href="#">
+                                    <p class="nav-title">Học tập Bác</p>
+                                </a>
+                            </li>
+                            <li class="ms-4">
+                                <a class="link" href="#">
+                                    <p class="nav-title">Môi trường</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row border-bottom border-3 pb-3">
+                        <div class="col-md-5 border-end pe-3">
+                            <a class="link" href="#"><img class="w-100 mb-2 thumb"
+                                    src="image/mua-ngap-o-uong-bi6-edited-1718090643151.webp" alt=""></a>
+                            <a class="link" href="#">
+                                <h5 class="title">Quảng Ninh: Tiểu thương "méo mặt" vì hàng hóa bị nước cuốn trôi</h5>
+                            </a>
+                            <a class="link" href="#">
+                                <p class="text-secondary">
+                                    Nhiều tiểu thương ở chợ Trung tâm TP Uông Bí (Quảng Ninh) cho biết, trận lụt vào đêm
+                                    8/6
+                                    rạng sáng 9/6, nhiều hàng...</p>
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="d-flex ms-3 border-bottom mb-3 pb-3">
+                                <a href="#" class="link col-md-8">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc nhiệm Israel
+                                    </h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+                            </div>
+                            <div class="d-flex ms-3 border-bottom mb-3 pb-3">
+                                <a href="#" class="link col-md-8">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc nhiệm Israel
+                                    </h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+
+                            </div>
+                            <div class="d-flex ms-3 border-bottom mb-3 pb-3">
+                                <a href="#" class="link col-md-8">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc nhiệm Israel
+                                    </h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+
+                            </div>
+                            <div class="d-flex ms-3">
+
+                                <a href="#" class="link col-md-8">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc nhiệm Israel
+                                    </h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 mt-3">
+                    <div class="d-flex">
+                        <a href="#" class="link">
+                            <h5 class="hnav-title">XÃ HỘI</h5>
+                        </a>
+                        <ul class="d-flex list-unstyled align-items-end">
+                            <li class="ms-4">
+                                <a class="link" href="#">
+                                    <p class="nav-title">Chính trị</p>
+                                </a>
+                            </li>
+                            <li class="ms-4">
+                                <a class="link" href="#">
+                                    <p class="nav-title">Học tập Bác</p>
+                                </a>
+                            </li>
+                            <li class="ms-4">
+                                <a class="link" href="#">
+                                    <p class="nav-title">Môi trường</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row border-bottom border-3 pb-3">
+                        <div class="col-md-5 border-end pe-3">
+                            <a class="link" href="#"><img class="w-100 mb-2 thumb"
+                                    src="image/mua-ngap-o-uong-bi6-edited-1718090643151.webp" alt=""></a>
+                            <a class="link" href="#">
+                                <h5 class="title">Quảng Ninh: Tiểu thương "méo mặt" vì hàng hóa bị nước cuốn trôi
+                                </h5>
+                            </a>
+                            <a class="link" href="#">
+                                <p class="text-secondary">
+                                    Nhiều tiểu thương ở chợ Trung tâm TP Uông Bí (Quảng Ninh) cho biết, trận lụt vào
+                                    đêm 8/6
+                                    rạng sáng 9/6, nhiều hàng...</p>
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="d-flex ms-3 border-bottom mb-3 pb-3">
+                                <a href="#" class="link col-md-8">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc nhiệm
+                                        Israel</h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+                            </div>
+                            <div class="d-flex ms-3 border-bottom mb-3 pb-3">
+                                <a href="#" class="link col-md-8">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc nhiệm
+                                        Israel</h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+
+                            </div>
+                            <div class="d-flex ms-3 border-bottom mb-3 pb-3">
+                                <a href="#" class="link col-md-8">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc nhiệm
+                                        Israel</h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+
+                            </div>
+                            <div class="d-flex ms-3">
+                                <a href="#" class="link col-md-8">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc nhiệm
+                                        Israel</h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <div class="d-flex">
+                        <a href="#" class="link">
+                            <h5 class="hnav-title">XÃ HỘI</h5>
+                        </a>
+                        <ul class="d-flex list-unstyled align-items-end">
+                            <li class="ms-4">
+                                <a class="link" href="#">
+                                    <p class="nav-title">Chính trị</p>
+                                </a>
+                            </li>
+                            <li class="ms-4">
+                                <a class="link" href="#">
+                                    <p class="nav-title">Học tập Bác</p>
+                                </a>
+                            </li>
+                            <li class="ms-4">
+                                <a class="link" href="#">
+                                    <p class="nav-title">Môi trường</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row border-bottom border-3 pb-3">
+                        <div class="col-md-5 border-end pe-3">
+                            <a class="link" href="#"><img class="w-100 mb-2 thumb"
+                                    src="image/mua-ngap-o-uong-bi6-edited-1718090643151.webp" alt=""></a>
+                            <a class="link" href="#">
+                                <h5 class="title">Quảng Ninh: Tiểu thương "méo mặt" vì hàng hóa bị nước cuốn
+                                    trôi</h5>
+                            </a>
+                            <a class="link" href="#">
+                                <p class="text-secondary">
+                                    Nhiều tiểu thương ở chợ Trung tâm TP Uông Bí (Quảng Ninh) cho biết, trận lụt
+                                    vào đêm 8/6
+                                    rạng sáng 9/6, nhiều hàng...</p>
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="d-flex ms-3 border-bottom mb-3 pb-3">
+                                <a href="#" class="link col-md-8 ">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc nhiệm
+                                        Israel</h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+                            </div>
+                            <div class="d-flex ms-3 border-bottom mb-3 pb-3">
+                                <a href="#" class="link col-md-8 ">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc nhiệm
+                                        Israel</h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+
+                            </div>
+                            <div class="d-flex ms-3 border-bottom mb-3 pb-3">
+                                <a href="#" class="link col-md-8 ">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc nhiệm
+                                        Israel</h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+
+                            </div>
+                            <div class="d-flex ms-3">
+                                <a href="#" class="link col-md-8 ">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc nhiệm
+                                        Israel</h6>
+                                </a>
+                                <a href="#" class="link col-md-4  ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <div class="d-flex">
+                        <a href="#" class="link">
+                            <h5 class="hnav-title">XÃ HỘI</h5>
+                        </a>
+                        <ul class="d-flex list-unstyled align-items-end">
+                            <li class="ms-4">
+                                <a class="link" href="#">
+                                    <p class="nav-title">Chính trị</p>
+                                </a>
+                            </li>
+                            <li class="ms-4">
+                                <a class="link" href="#">
+                                    <p class="nav-title">Học tập Bác</p>
+                                </a>
+                            </li>
+                            <li class="ms-4">
+                                <a class="link" href="#">
+                                    <p class="nav-title">Môi trường</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row border-bottom border-3 pb-3">
+                        <div class="col-md-5 border-end pe-3">
+                            <a class="link" href="#"><img class="w-100 mb-2 thumb"
+                                    src="image/mua-ngap-o-uong-bi6-edited-1718090643151.webp" alt=""></a>
+                            <a class="link" href="#">
+                                <h5 class="title">Quảng Ninh: Tiểu thương "méo mặt" vì hàng hóa bị nước cuốn
+                                    trôi</h5>
+                            </a>
+                            <a class="link" href="#">
+                                <p class="text-secondary">
+                                    Nhiều tiểu thương ở chợ Trung tâm TP Uông Bí (Quảng Ninh) cho biết, trận
+                                    lụt vào đêm 8/6
+                                    rạng sáng 9/6, nhiều hàng...</p>
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="d-flex ms-3 border-bottom mb-3 pb-3">
+                                <a href="#" class="link col-md-8">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc
+                                        nhiệm Israel</h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+                            </div>
+                            <div class="d-flex ms-3 border-bottom mb-3 pb-3">
+                                <a href="#" class="link col-md-8">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc
+                                        nhiệm Israel</h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+
+                            </div>
+                            <div class="d-flex ms-3 border-bottom mb-3 pb-3">
+                                <a href="#" class="link col-md-8">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc
+                                        nhiệm Israel</h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+
+                            </div>
+                            <div class="d-flex ms-3">
+                                <a href="#" class="link col-md-8">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc
+                                        nhiệm Israel</h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex border-bottom mb-3 pb-3 border-3 mt-3">
+                    <div class="col-md-6 pe-3">
+                        <a class="link" href="#">
+                            <h5 class="title mb-3">DÂN SINH</h5>
+                        </a>
+                        <a class="link" href="#"><img class="thumb w-100 mb-2"
+                                src="image/luong-cong-an-1718003500985.webp" alt=""></a>
+                        <a href="#" class="link">
+                            <h5 class="title">7 nhóm thuộc ngành công an quân đội mức lương tương quan
+                                công chức từ 1/7</h5>
+                        </a>
+                    </div>
+                    <div class="col-md-6 ps-3">
+                        <a class="link" href="#">
+                            <h5 class="title mb-3">DÂN SINH</h5>
+                        </a>
+                        <a class="link" href="#"><img class="thumb w-100 mb-2"
+                                src="image/luong-cong-an-1718003500985.webp" alt=""></a>
+                        <a href="#" class="link">
+                            <h5 class="title">7 nhóm thuộc ngành công an quân đội mức lương tương quan
+                                công chức từ 1/7</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <div class="d-flex">
+                        <a href="#" class="link">
+                            <h5 class="hnav-title">XÃ HỘI</h5>
+                        </a>
+                        <ul class="d-flex list-unstyled align-items-end">
+                            <li class="ms-4">
+                                <a class="link" href="#">
+                                    <p class="nav-title">Chính trị</p>
+                                </a>
+                            </li>
+                            <li class="ms-4">
+                                <a class="link" href="#">
+                                    <p class="nav-title">Học tập Bác</p>
+                                </a>
+                            </li>
+                            <li class="ms-4">
+                                <a class="link" href="#">
+                                    <p class="nav-title">Môi trường</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row border-bottom border-3 pb-3">
+                        <div class="col-md-5 border-end pe-3">
+                            <a class="link" href="#"><img class="w-100 mb-2 thumb"
+                                    src="image/mua-ngap-o-uong-bi6-edited-1718090643151.webp" alt=""></a>
+                            <a class="link" href="#">
+                                <h5 class="title">Quảng Ninh: Tiểu thương "méo mặt" vì hàng hóa bị nước
+                                    cuốn trôi</h5>
+                            </a>
+                            <a class="link" href="#">
+                                <p class="text-secondary">
+                                    Nhiều tiểu thương ở chợ Trung tâm TP Uông Bí (Quảng Ninh) cho biết,
+                                    trận lụt vào đêm 8/6
+                                    rạng sáng 9/6, nhiều hàng...</p>
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="d-flex ms-3 border-bottom mb-3 pb-3">
+                                <a href="#" class="link col-md-8">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc
+                                        nhiệm Israel</h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+                            </div>
+                            <div class="d-flex ms-3 border-bottom mb-3 pb-3">
+                                <a href="#" class="link col-md-8">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc
+                                        nhiệm Israel</h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+
+                            </div>
+                            <div class="d-flex ms-3 border-bottom mb-3 pb-3">
+                                <a href="#" class="link col-md-8">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc
+                                        nhiệm Israel</h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+
+                            </div>
+                            <div class="d-flex ms-3">
+                                <a href="#" class="link col-md-8">
+                                    <h6 class="title">Màn đấu súng dưới làn đạn giải cứu con tin của đặc
+                                        nhiệm Israel</h6>
+                                </a>
+                                <a href="#" class="link col-md-4 ps-3"> <img class="thumb w-100"
+                                        src="image/maybayst-1718093467689.webp" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 d-flex mt-3">
+                    <div class="col-md-6">
+                        <a href="#" class="link">
+                            <h5 class="title">ĐỌC BÁO GIẤY ONLINE</h5>
+                        </a>
+                        <a href="#" class="link"><img class="w-100 shadow" src="image/so-bao-ldxh-70-1718079414605.webp"
+                                alt=""></a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="#"> <img class="w-100 ps-3" src="image/Screenshot 2024-06-11 144649.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-light mb-3">
+            <div class="pt-4 px-4 d-flex justify-content-between mb-3">
+                <h4 class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="green"
+                        class="bi bi-play-circle-fill me-1" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+                    </svg>
+                    <a class="text-success text-decoration-none" href="#">MEDIA</a>
+                </h4>
+                <a class="text-secondary text-decoration-none fw-bold link" href="#">
+                    <span class="title">Theo dõi Dân Trí trên</span> <img
+                        src="https://cdnweb.dantri.com.vn/dist/f91774d4cdfe1fbe4987.png" alt="">
+                </a>
+            </div>
+            <div class="row mb-3 mx-auto">
+                <div class="col-md-4 video-thumb">
+                    <a href="#">
+                        <img class=" thumb w-100" src="image/0_00_15.webp" alt="">
+                        <div class="video-icon">
+                            <svg aria-hidden="true" width="24" height="24" viewBox="0 0 36 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 36C27.9411 36 36 27.9411 36 18C36 8.05887 27.9411 0 18 0C8.05887 0 0 8.05887 0 18C0 27.9411 8.05887 36 18 36Z"
+                                    fill="#1A7900"></path>
+                                <path d="M14.4 10.7998L25.2 17.9998L14.4 25.1998V10.7998Z" fill="#fff">
+                                </path>
+                            </svg>
+                            <span class="ps-1">00:29</span>
+                        </div>
+                    </a>
+                    <a href="#" class="link">
+                        <h5 class="title">UAV Nga lao thẳng xuống mục tiêu, cường kích Su-25 Ukraine nổ như "cầu lửa"
+                        </h5>
+                    </a>
+                </div>
+                <div class="col-md-4 video-thumb">
+                    <a href="#">
+                        <img class=" thumb w-100" src="image/0_00_15.webp" alt="">
+                        <div class="video-icon">
+                            <svg aria-hidden="true" width="24" height="24" viewBox="0 0 36 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 36C27.9411 36 36 27.9411 36 18C36 8.05887 27.9411 0 18 0C8.05887 0 0 8.05887 0 18C0 27.9411 8.05887 36 18 36Z"
+                                    fill="#1A7900"></path>
+                                <path d="M14.4 10.7998L25.2 17.9998L14.4 25.1998V10.7998Z" fill="#fff">
+                                </path>
+                            </svg>
+                            <span class="ps-1">00:29</span>
+                        </div>
+                    </a>
+                    <a href="#" class="link">
+                        <h5 class="title">UAV Nga lao thẳng xuống mục tiêu, cường kích Su-25 Ukraine nổ như "cầu lửa"
+                        </h5>
+                    </a>
+                </div>
+                <div class="col-md-4 video-thumb">
+                    <a href="#">
+                        <img class=" thumb w-100" src="image/0_00_15.webp" alt="">
+                        <div class="video-icon">
+                            <svg aria-hidden="true" width="24" height="24" viewBox="0 0 36 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 36C27.9411 36 36 27.9411 36 18C36 8.05887 27.9411 0 18 0C8.05887 0 0 8.05887 0 18C0 27.9411 8.05887 36 18 36Z"
+                                    fill="#1A7900"></path>
+                                <path d="M14.4 10.7998L25.2 17.9998L14.4 25.1998V10.7998Z" fill="#fff">
+                                </path>
+                            </svg>
+                            <span class="ps-1">00:29</span>
+                        </div>
+                    </a>
+                    <a href="#" class="link">
+                        <h5 class="title">UAV Nga lao thẳng xuống mục tiêu, cường kích Su-25 Ukraine nổ như "cầu lửa"
+                        </h5>
+                    </a>
+                </div>
+            </div>
+            <div class="px-4">
+                <div class="row border-top">
+                    <h5 class="my-3">VIDEO NGẮN</h5>
+                </div>
+                <div class="row mx-auto">
+                    <div class="col-md-2 mb-3">
+                        <a href="#" class="link"><img class="thumb w-100 mb-2" src="image/0_00_00.webp" alt=""></a>
+                        <a href="#" class="link">
+                            <h6 class="title">Kẻ trộm đào đường hầm vào cửa hiệu, lấy đi số nữ trang giá 550.000 USD
+                            </h6>
+                        </a>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <a href="#" class="link"><img class="thumb w-100 mb-2" src="image/0_00_00.webp" alt=""></a>
+                        <a href="#" class="link">
+                            <h6 class="title">Kẻ trộm đào đường hầm vào cửa hiệu, lấy đi số nữ trang giá 550.000 USD
+                            </h6>
+                        </a>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <a href="#" class="link"><img class="thumb w-100 mb-2" src="image/0_00_00.webp" alt=""></a>
+                        <a href="#" class="link">
+                            <h6 class="title">Kẻ trộm đào đường hầm vào cửa hiệu, lấy đi số nữ trang giá 550.000 USD
+                            </h6>
+                        </a>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <a href="#" class="link"><img class="thumb w-100 mb-2" src="image/0_00_00.webp" alt=""></a>
+                        <a href="#" class="link">
+                            <h6 class="title">Kẻ trộm đào đường hầm vào cửa hiệu, lấy đi số nữ trang giá 550.000 USD
+                            </h6>
+                        </a>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <a href="#" class="link"><img class="thumb w-100 mb-2" src="image/0_00_00.webp" alt=""></a>
+                        <a href="#" class="link">
+                            <h6 class="title">Kẻ trộm đào đường hầm vào cửa hiệu, lấy đi số nữ trang giá 550.000 USD
+                            </h6>
+                        </a>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <a href="#" class="link"><img class="thumb w-100 mb-2" src="image/0_00_00.webp" alt=""></a>
+                        <a href="#" class="link">
+                            <h6 class="title">Kẻ trộm đào đường hầm vào cửa hiệu, lấy đi số nữ trang giá 550.000 USD
+                            </h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <hr class="my-3">
+            <div class="d-flex">
+                <h5 class="title"><a class="hnav-title" href="#">SỨC MẠNH SỐ</a></h5>
+                <ul class="d-flex list-unstyled">
+                    <li class="ms-4 title"><a class="nav-title" href="#">Sản
+                            phẩm</a></li>
+                    <li class="title ms-4"><a class="nav-title" href="#">Di động -
+                            Viễn thông</a></li>
+                    <li class="title ms-4"><a class="nav-title" href="#">Phần mềm
+                            - Bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-3 pe-3">
+                    <div class="border-bottom mb-2 pb-2">
+                        <a href="#" class="link"><img class="w-100"
+                                src="image/4481589148258365856776238863701584087816516n-edited-1717995560473.webp"
+                                alt=""></a>
+                        <a href="#" class="link">
+                            <h5 class="title mt-2">Ô tô mắc kẹt trên phố, nhà cửa ngập trong "biển nước" ở TP Hà
+                                Giang</h5>
+                        </a>
+                    </div>
+                    <div class="my-2 py-2">
+                        <a href="#" class="link"><img class="w-100"
+                                src="image/4481589148258365856776238863701584087816516n-edited-1717995560473.webp"
+                                alt=""></a>
+                        <a href="#" class="link">
+                            <h5 class="title mt-2">Ô tô mắc kẹt trên phố, nhà cửa ngập trong "biển nước" ở TP Hà
+                                Giang</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 border border-top-0 border-bottom-0 ps-3 pe-3 ">
+                    <a href="#" class="link"><img class="w-100 mb-3"
+                            src="image/thu-tuong-pham-minh-chinh-edited-1718003185753.webp" alt=""></a>
+                    <a href="#" class="link">
+                        <h3 class="title">Từ 1/7, VNeID là tài khoản duy nhất để người dân làm thủ tục hành chính</h3>
+                    </a>
+                    <a href="#" class="link">
+                        <p>Nhấn mạnh việc đơn giản hóa, tái cấu trúc quy trình thủ tục hành chính, Thủ
+                            tướng yêu cầu bảo đảm
+                            các điều kiện để từ ngày 1/7, VNeID là tài khoản duy nhất để người dân thực
+                            hiện thủ tục hành
+                            chính.</p>
+                    </a>
+                </div>
+                <div class="col-md-3 ps-3">
+                    <div class="border-bottom mb-3 pb-3 d-flex">
+                        <a href="#" class="link col-md-7">
+                            <h5 class="title">Chủ tịch nước Tô Lâm làm việc với Tỉnh ủy Cao Bằng</h5>
+                        </a>
+                        <a href="#" class="link mx-2 col-md-5 px-2"><img class="thumb w-100"
+                                src="image/chu-tich-nuoc-to-lam-edited-1718028084883.webp" alt=""></a>
+                    </div>
+                    <div class="border-bottom my-3 pb-3  d-flex">
+                        <a href="#" class="link col-md-7">
+                            <h5 class="title">Chủ tịch nước Tô Lâm làm việc với Tỉnh ủy Cao Bằng</h5>
+                        </a>
+                        <a href="#" class="link mx-2 col-md-5 px-2"><img class="thumb w-100"
+                                src="image/chu-tich-nuoc-to-lam-edited-1718028084883.webp" alt=""></a>
+                    </div>
+                    <div class="border-bottom my-3 pb-3  d-flex">
+                        <a href="#" class="link col-md-7">
+                            <h5 class="title">Chủ tịch nước Tô Lâm làm việc với Tỉnh ủy Cao Bằng</h5>
+                        </a>
+                        <a href="#" class="link mx-2 col-md-5 px-2"><img class="thumb w-100"
+                                src="image/chu-tich-nuoc-to-lam-edited-1718028084883.webp" alt=""></a>
+                    </div>
+                    <div class="border-bottom my-3 pb-3  d-flex">
+                        <a href="#" class="link col-md-7">
+                            <h5 class="title">Chủ tịch nước Tô Lâm làm việc với Tỉnh ủy Cao Bằng</h5>
+                        </a>
+                        <a href="#" class="link mx-2 col-md-5 px-2"><img class="thumb w-100"
+                                src="image/chu-tich-nuoc-to-lam-edited-1718028084883.webp" alt=""></a>
+                    </div>
+                    <div class="my-3 pb-3 d-flex">
+                        <a href="#" class="link col-md-7">
+                            <h5 class="title">Chủ tịch nước Tô Lâm làm việc với Tỉnh ủy Cao Bằng</h5>
+                        </a>
+                        <a href="#" class="link mx-2 col-md-5 px-2"><img class="thumb w-100"
+                                src="image/chu-tich-nuoc-to-lam-edited-1718028084883.webp" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <hr class="my-3">
+            <div class="d-flex">
+                <h5 class="title"><a class="hnav-title" href="#">SỨC MẠNH SỐ</a></h5>
+                <ul class="d-flex list-unstyled">
+                    <li class="ms-4 title"><a class="nav-title" href="#">Sản
+                            phẩm</a></li>
+                    <li class="title ms-4"><a class="nav-title" href="#">Di động -
+                            Viễn thông</a></li>
+                    <li class="title ms-4"><a class="nav-title" href="#">Phần mềm
+                            - Bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-3 pe-3">
+                    <div class="border-bottom mb-2 pb-2">
+                        <a href="#" class="link"><img class="w-100"
+                                src="image/4481589148258365856776238863701584087816516n-edited-1717995560473.webp"
+                                alt=""></a>
+                        <a href="#" class="link">
+                            <h5 class="title mt-2">Ô tô mắc kẹt trên phố, nhà cửa ngập trong "biển nước" ở TP Hà
+                                Giang</h5>
+                        </a>
+                    </div>
+                    <div class="my-2 py-2">
+                        <a href="#" class="link"><img class="w-100"
+                                src="image/4481589148258365856776238863701584087816516n-edited-1717995560473.webp"
+                                alt=""></a>
+                        <a href="#" class="link">
+                            <h5 class="title mt-2">Ô tô mắc kẹt trên phố, nhà cửa ngập trong "biển nước" ở TP Hà
+                                Giang</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 border border-top-0 border-bottom-0 ps-3 pe-3 ">
+                    <a href="#" class="link"><img class="w-100 mb-3"
+                            src="image/thu-tuong-pham-minh-chinh-edited-1718003185753.webp" alt=""></a>
+                    <a href="#" class="link">
+                        <h3 class="title">Từ 1/7, VNeID là tài khoản duy nhất để người dân làm thủ tục hành chính</h3>
+                    </a>
+                    <a href="#" class="link">
+                        <p>Nhấn mạnh việc đơn giản hóa, tái cấu trúc quy trình thủ tục hành chính, Thủ
+                            tướng yêu cầu bảo đảm
+                            các điều kiện để từ ngày 1/7, VNeID là tài khoản duy nhất để người dân thực
+                            hiện thủ tục hành
+                            chính.</p>
+                    </a>
+                </div>
+                <div class="col-md-3 ps-3">
+                    <div class="border-bottom mb-3 pb-3 d-flex">
+                        <a href="#" class="link col-md-7">
+                            <h5 class="title">Chủ tịch nước Tô Lâm làm việc với Tỉnh ủy Cao Bằng</h5>
+                        </a>
+                        <a href="#" class="link mx-2 col-md-5 px-2"><img class="thumb w-100"
+                                src="image/chu-tich-nuoc-to-lam-edited-1718028084883.webp" alt=""></a>
+                    </div>
+                    <div class="border-bottom my-3 pb-3  d-flex">
+                        <a href="#" class="link col-md-7">
+                            <h5 class="title">Chủ tịch nước Tô Lâm làm việc với Tỉnh ủy Cao Bằng</h5>
+                        </a>
+                        <a href="#" class="link mx-2 col-md-5 px-2"><img class="thumb w-100"
+                                src="image/chu-tich-nuoc-to-lam-edited-1718028084883.webp" alt=""></a>
+                    </div>
+                    <div class="border-bottom my-3 pb-3  d-flex">
+                        <a href="#" class="link col-md-7">
+                            <h5 class="title">Chủ tịch nước Tô Lâm làm việc với Tỉnh ủy Cao Bằng</h5>
+                        </a>
+                        <a href="#" class="link mx-2 col-md-5 px-2"><img class="thumb w-100"
+                                src="image/chu-tich-nuoc-to-lam-edited-1718028084883.webp" alt=""></a>
+                    </div>
+                    <div class="border-bottom my-3 pb-3  d-flex">
+                        <a href="#" class="link col-md-7">
+                            <h5 class="title">Chủ tịch nước Tô Lâm làm việc với Tỉnh ủy Cao Bằng</h5>
+                        </a>
+                        <a href="#" class="link mx-2 col-md-5 px-2"><img class="thumb w-100"
+                                src="image/chu-tich-nuoc-to-lam-edited-1718028084883.webp" alt=""></a>
+                    </div>
+                    <div class="my-3 pb-3 d-flex">
+                        <a href="#" class="link col-md-7">
+                            <h5 class="title">Chủ tịch nước Tô Lâm làm việc với Tỉnh ủy Cao Bằng</h5>
+                        </a>
+                        <a href="#" class="link mx-2 col-md-5 px-2"><img class="thumb w-100"
+                                src="image/chu-tich-nuoc-to-lam-edited-1718028084883.webp" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row border-top">
+            <div class="d-flex mt-3">
+                <div class="">
+                    <h5 class="hnav-title">DÂN TRÍ SPOTLIGHT</h5>
+                </div>
+                <ol class="list-unstyled d-flex">
+                    <li class="link "><a class="nav-title ms-4" href="#">Dmagazine</a>
+                    </li>
+                    <li class="link"><a class="nav-title ms-4" href="#">Infographic</a>
+                    </li>
+                    <li class="link"><a class="nav-title ms-4" href="#">DBiz</a>
+                    </li>
+                    <li class="link"><a class="nav-title ms-4" href="#">Photo
+                            Story</a></li>
+                    <li class="link"><a class="nav-title ms-4" href="#">Tâm điểm</a>
+                    </li>
+                </ol>
+            </div>
+            <div class="swiper mySwiper ms-2 mb-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="link"><img class="thumb" src="image/co-logo-1718187449299.webp" alt=""></a>
+                        <a href="#" class="link">
+                            <h4>DBiz</h4>
+                        </a>
+                        <a class="link" href="#">
+                            <h5 class="title">Hồ sơ công ty chứng
+                                khoán
+                                trong vụ Trương Mỹ Lan lừa đảo gần 31.000 tỷ đồng</h5>
+                        </a>
+                    </div>
+                    <div class="swiper-slide col-md-3">
+                        <a href="#" class="link"><img class="thumb" src="image/co-logo-1718187449299.webp" alt=""></a>
+                        <a href="#" class="link">
+                            <h4>DBiz</h4>
+                        </a>
+                        <a class="link" href="#">
+                            <h5 class="title">Hồ sơ công ty chứng
+                                khoán
+                                trong vụ Trương Mỹ Lan lừa đảo gần 31.000 tỷ đồng</h5>
+                        </a>
+                    </div>
+                    <div class="swiper-slide col-md-3">
+                        <a href="#" class="link"><img class="thumb" src="image/co-logo-1718187449299.webp" alt=""></a>
+                        <a href="#" class="link">
+                            <h4>DBiz</h4>
+                        </a>
+                        <a class="link" href="#">
+                            <h5 class="title">Hồ sơ công ty chứng
+                                khoán
+                                trong vụ Trương Mỹ Lan lừa đảo gần 31.000 tỷ đồng</h5>
+                        </a>
+                    </div>
+                    <div class="swiper-slide col-md-3">
+                        <a href="#" class="link"><img class="thumb" src="image/co-logo-1718187449299.webp" alt=""></a>
+                        <a href="#" class="link">
+                            <h4>DBiz</h4>
+                        </a>
+                        <a class="link" href="#">
+                            <h5 class="title">Hồ sơ công ty chứng
+                                khoán
+                                trong vụ Trương Mỹ Lan lừa đảo gần 31.000 tỷ đồng</h5>
+                        </a>
+                    </div>
+                    <div class="swiper-slide col-md-3">
+                        <a href="#" class="link"><img class="thumb" src="image/co-logo-1718187449299.webp" alt=""></a>
+                        <a href="#" class="link">
+                            <h4>DBiz</h4>
+                        </a>
+                        <a class="link" href="#">
+                            <h5 class="title">Hồ sơ công ty chứng
+                                khoán
+                                trong vụ Trương Mỹ Lan lừa đảo gần 31.000 tỷ đồng</h5>
+                        </a>
+                    </div>
+                    <div class="swiper-slide col-md-3">
+                        <a href="#" class="link"><img class="thumb" src="image/co-logo-1718187449299.webp" alt=""></a>
+                        <a href="#" class="link">
+                            <h4>DBiz</h4>
+                        </a>
+                        <a class="link" href="#">
+                            <h5 class="title">Hồ sơ công ty chứng
+                                khoán
+                                trong vụ Trương Mỹ Lan lừa đảo gần 31.000 tỷ đồng</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next bg-success text-white "></div>
+                <div class="swiper-button-prev bg-success text-white"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                    freeMode: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            </script>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h4 class="mt-2 border-top pt-3"><a class="hnav-title" href="#">PHÁP LUẬT</a>
+                </h4>
+                <ul class="d-flex list-unstyled">
+                    <li class="link"><a class="nav-title" href="#">Hồ sơ vụ án</a></li>
+                    <li class="link"><a class="nav-title ms-2" href="#">Pháp đình</a>
+                    </li>
+                </ul>
+                <img class="thumb" src="image/4460353848719504114434644145438147100065058n-edited-1718348710317.webp"
+                    alt="">
+                <h4 class=""><a class="title link" href="#">Bắt tài xế xe bồn
+                        trong vụ tai nạn khiến 2 mẹ con tử vong</a></h4>
+                <div class="mt-4 border-top d-flex pt-3">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+                <div class="mt-4 border-top d-flex pt-3">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+                <div class="mt-4 border-top d-flex pt-3 mb-5">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4 class="mt-2 border-top pt-3"><a class="hnav-title" href="#">PHÁP LUẬT</a>
+                </h4>
+                <ul class="d-flex list-unstyled">
+                    <li class="link"><a class="nav-title" href="#">Hồ sơ vụ án</a></li>
+                    <li class="link"><a class="nav-title ms-2" href="#">Pháp đình</a>
+                    </li>
+                </ul>
+                <img class="thumb" src="image/4460353848719504114434644145438147100065058n-edited-1718348710317.webp"
+                    alt="">
+                <h4 class=""><a class="title link" href="#">Bắt tài xế xe bồn
+                        trong vụ tai nạn khiến 2 mẹ con tử vong</a></h4>
+                <div class="mt-4 border-top d-flex pt-3">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+                <div class="mt-4 border-top d-flex pt-3">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+                <div class="mt-4 border-top d-flex pt-3 mb-5">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4 class="mt-2 border-top pt-3"><a class="hnav-title" href="#">PHÁP LUẬT</a>
+                </h4>
+                <ul class="d-flex list-unstyled">
+                    <li class="link"><a class="nav-title" href="#">Hồ sơ vụ án</a></li>
+                    <li class="link"><a class="nav-title ms-2" href="#">Pháp đình</a>
+                    </li>
+                </ul>
+                <img class="thumb" src="image/4460353848719504114434644145438147100065058n-edited-1718348710317.webp"
+                    alt="">
+                <h4 class=""><a class="title link" href="#">Bắt tài xế xe bồn
+                        trong vụ tai nạn khiến 2 mẹ con tử vong</a></h4>
+                <div class="mt-4 border-top d-flex pt-3">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+                <div class="mt-4 border-top d-flex pt-3">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+                <div class="mt-4 border-top d-flex pt-3 mb-5">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4 class="mt-2 border-top pt-3"><a class="hnav-title" href="#">PHÁP LUẬT</a>
+                </h4>
+                <ul class="d-flex list-unstyled">
+                    <li class="link"><a class="nav-title" href="#">Hồ sơ vụ án</a></li>
+                    <li class="link"><a class="nav-title ms-2" href="#">Pháp đình</a>
+                    </li>
+                </ul>
+                <img class="thumb" src="image/4460353848719504114434644145438147100065058n-edited-1718348710317.webp"
+                    alt="">
+                <h4 class=""><a class="title link" href="#">Bắt tài xế xe bồn
+                        trong vụ tai nạn khiến 2 mẹ con tử vong</a></h4>
+                <div class="mt-4 border-top d-flex pt-3">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+                <div class="mt-4 border-top d-flex pt-3">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+                <div class="mt-4 border-top d-flex pt-3 mb-5">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 pb-5 mb-3 border-bottom border-4 border-success">
+            <div class="col-md-3">
+                <h4 class="mt-2 border-top pt-3"><a class="hnav-title" href="#">PHÁP LUẬT</a>
+                </h4>
+                <ul class="d-flex list-unstyled">
+                    <li class="link"><a class="nav-title" href="#">Hồ sơ vụ án</a></li>
+                    <li class="link"><a class="nav-title ms-2" href="#">Pháp đình</a>
+                    </li>
+                </ul>
+                <img class="thumb" src="image/4460353848719504114434644145438147100065058n-edited-1718348710317.webp"
+                    alt="">
+                <h4 class=""><a class="title link" href="#">Bắt tài xế xe bồn
+                        trong vụ tai nạn khiến 2 mẹ con tử vong</a></h4>
+                <div class="mt-4 border-top d-flex pt-3">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+                <div class="mt-4 border-top d-flex pt-3">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+                <div class="mt-4 border-top d-flex pt-3 mb-5">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4 class="mt-2 border-top pt-3"><a class="hnav-title" href="#">PHÁP LUẬT</a>
+                </h4>
+                <ul class="d-flex list-unstyled">
+                    <li class="link"><a class="nav-title" href="#">Hồ sơ vụ án</a></li>
+                    <li class="link"><a class="nav-title ms-2" href="#">Pháp đình</a>
+                    </li>
+                </ul>
+                <img class="thumb" src="image/4460353848719504114434644145438147100065058n-edited-1718348710317.webp"
+                    alt="">
+                <h4 class=""><a class="title link" href="#">Bắt tài xế xe bồn
+                        trong vụ tai nạn khiến 2 mẹ con tử vong</a></h4>
+                <div class="mt-4 border-top d-flex pt-3">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+                <div class="mt-4 border-top d-flex pt-3">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+                <div class="mt-4 border-top d-flex pt-3 mb-5">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4 class="mt-2 border-top pt-3"><a class="hnav-title" href="#">PHÁP LUẬT</a>
+                </h4>
+                <ul class="d-flex list-unstyled">
+                    <li class="link"><a class="nav-title" href="#">Hồ sơ vụ án</a></li>
+                    <li class="link"><a class="nav-title ms-2" href="#">Pháp đình</a>
+                    </li>
+                </ul>
+                <img class="thumb" src="image/4460353848719504114434644145438147100065058n-edited-1718348710317.webp"
+                    alt="">
+                <h4 class=""><a class="title link" href="#">Bắt tài xế xe bồn
+                        trong vụ tai nạn khiến 2 mẹ con tử vong</a></h4>
+                <div class="mt-4 border-top d-flex pt-3">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+                <div class="mt-4 border-top d-flex pt-3">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+                <div class="mt-4 border-top d-flex pt-3 mb-5">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4 class="mt-2 border-top pt-3"><a class="hnav-title" href="#">PHÁP LUẬT</a>
+                </h4>
+                <ul class="d-flex list-unstyled">
+                    <li class="link"><a class="nav-title" href="#">Hồ sơ vụ án</a></li>
+                    <li class="link"><a class="nav-title ms-2" href="#">Pháp đình</a>
+                    </li>
+                </ul>
+                <img class="thumb" src="image/4460353848719504114434644145438147100065058n-edited-1718348710317.webp"
+                    alt="">
+                <h4 class=""><a class="title link" href="#">Bắt tài xế xe bồn
+                        trong vụ tai nạn khiến 2 mẹ con tử vong</a></h4>
+                <div class="mt-4 border-top d-flex pt-3">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+                <div class="mt-4 border-top d-flex pt-3">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+                <div class="mt-4 border-top d-flex pt-3 mb-5">
+                    <p class="col-md-7"><a class="second-title" href="#">Bắt
+                            người nước ngoài "cõng" 20kg ma túy vào Việt Nam</a></p>
+                    <img class="col-md-5 thumb"
+                        src="image/z55373013754828e922c2edb98da9f8f445c667a451184-edited-crop-1718338369233.webp"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer container lh-1">
+        <div class="col-md-2 col-3 mb-3">
+            <a href="#" class="link">
+                <img class="" src="https://cdnweb.dantri.com.vn/dist/static-logo.1-0-1.742f36bc45f3443d0e59.svg" alt="">
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Cơ quan của Bộ Lao động - Thương binh và Xã hội</p>
+                <p>Tổng biên tập: Phạm Tuấn Anh</p>
+                <p>Giấy phép hoạt động báo điện tử Dân trí số 411/GP - BTTTT Hà Nội, ngày 31-10-2023</p>
+                <p>Địa chỉ tòa soạn: Nhà 48, ngõ 2 Giảng Võ, Cát Linh, Đống Đa, Hà Nội</p>
+                <p>Điện thoại: <a href="#" class="link">024-3736-6491</a> . Hotline HN: <a href="#" class="link">0973-567-567</a></p>
+                <p>Văn phòng đại diện miền Nam: 51 Võ Văn Tần, Phường Võ Thị Sáu, Quận 3, TPHCM</p>
+                <p>Hotline TPHCM: <a class="link" href="#">0974-567-567</a></p>
+                <p>Email: <a class="link" href="#">info@dantri.com.vn</a>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p><a class="link" href="#">RSS</a></p>
+                <p><a class="link" href="#">Liên hệ tòa soạn</a></p>
+                <p>Liên hệ quảng cáo: <a class="link" href="#">0945.54.03.03</a></p>
+                <p>Email: <a class="link" href="#">quangcao@dantri.com.vn</a></p>
+                <p><a class="link" href="#">Chính sách bảo mật dữ liệu cá nhân </a></p>
+            </div>
+            <div class="col-md-3">
+                <p>Đọc báo Dân Trí trên mobile:</p>
+                <div class="d-flex">
+                    <a class="link" href="#"><img src="image/ee6bf097e303486d2a1c.png" alt=""></a>
+                    <a class="link" href="#"><img src="image/25695d60eaeb16411962.png" alt=""></a>
+                </div>
+                <p>Theo dõi Dân Trí trên:
+                    <img src="https://cdnweb.dantri.com.vn/dist/f79dca0321a473942b57.svg" alt="">
+                    <img src="https://cdnweb.dantri.com.vn/dist/add0b845165b2db1bdc0.svg" alt="">
+                    <img src="https://cdnweb.dantri.com.vn/dist/e84c1388df2f58641617.svg" alt="">
+                </p>
+            </div>
+        </div>
+        <p class="text-secondary">© 2005-2024 Bản quyền thuộc về Báo điện tử Dân trí. Cấm sao chép dưới mọi hình thức
+            nếu không có sự chấp thuận bằng văn bản.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

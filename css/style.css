@@ -1,0 +1,221 @@
+.IGv0m1128tJ5jFbLBker.UJHwOgU3bHCGwFvnmoEg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    font-family: Inter, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    line-height: 18px;
+}
+
+.IGv0m1128tJ5jFbLBker .ZfWACAKknj1VfFK4AMkD {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    height: 26px;
+    width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(214 214 214 / var(--tw-bg-opacity));
+}
+
+.IGv0m1128tJ5jFbLBker .zshi2lxvbjGHFsgp1DNy.V9Jp_oqNM6h30ard8Zgd {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17px;
+    --tw-text-opacity: 1;
+    color: rgb(102 102 102 / var(--tw-text-opacity));
+}
+
+.IGv0m1128tJ5jFbLBker .zshi2lxvbjGHFsgp1DNy {
+    display: block;
+    text-align: right;
+}
+
+.IGv0m1128tJ5jFbLBker .zshi2lxvbjGHFsgp1DNy.wa8hsUSFvhh4lLAnvrBY {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    --tw-text-opacity: 1;
+    color: rgb(102 102 102 / var(--tw-text-opacity));
+}
+
+.IGv0m1128tJ5jFbLBker .zshi2lxvbjGHFsgp1DNy {
+    display: block;
+    text-align: right;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+.title:hover {
+    color: rgb(102, 102, 247);
+}
+
+.second-title {
+    color: gray;
+    text-decoration: none;
+}
+
+.second-title:hover {
+    color: rgb(102, 102, 247);
+}
+
+.thumb {
+    width: 100%;
+}
+
+.nav-title {
+    color: green;
+    text-decoration: none;
+}
+
+.nav-title:hover {
+    color: rgb(102, 102, 247);
+}
+
+.hnav-title {
+    color: green;
+    text-decoration: none;
+}
+
+.hnav-title:hover {
+    color: rgb(102, 102, 247);
+}
+
+.menu-wrap {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    position: sticky;
+    border-bottom: 1px solid #eee;
+    top: 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-link{
+    font-weight: 500;
+    color: #333;
+    height: 30px;
+    align-items:center;
+}
+
+.nav-link svg{
+    font-weight: 500;
+    color: #333;
+    height: 30px;
+    align-items:center;
+}
+
+.menu-wrap .nav-item:hover{
+    border-bottom: 1px solid green;
+}
+
+.video-thumb {
+    position: relative;
+    line-height: 0;
+    display: block;
+    overflow: hidden;
+}
+
+.video-icon {
+    color: #fff;
+    position: absolute;
+    left: 15px;
+    bottom: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    padding: 4px 8px 4px 4px;
+    background: rgba(34, 34, 34, .7) none;
+    border-radius: 234px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu{
+    position: relative;
+}
+
+.sub-menu {
+    margin: 0;
+    padding: 2px 0 4px;
+    list-style: none;
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    min-width: 140px;
+    background: #eee none;
+    border-radius: 0 0 5px 5px;
+    transition: all .15s;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+.sub-menu-item{
+    padding: 3px 0 3px 0;
+    border-bottom: 1px solid gray;
+}
+
+.sub-menu-item a{
+    padding: 8px 12px;
+    line-height: 16px;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #666;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    transition: all .15s;
+}
+
+.sub-menu-item.last{
+    border-bottom: none;
+}
+
+.menu:hover>.sub-menu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.sub-menu-item a:hover{
+    color: rgb(102, 102, 247);
+}
+
+.nav-toggle, .login-btn{
+    display: none;
+}
