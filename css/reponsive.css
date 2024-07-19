@@ -3,7 +3,7 @@
 }
 
 @media only screen and (max-width: 780px) {
-    .weather-placeholder, .hnav, .header-area, nav,.nav-title{
+    .weather-placeholder, .hnav, .header-area, nav,.nav-title,.scroll-top{
         display: none;
     }
 

@@ -10,6 +10,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        function scrolltop() {
+            var id_button = '#scrolltop';
+
+            var offset = 220;
+            
+            var duration = 500;
+
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > offset) {
+                    jQuery(id_button).fadeIn(duration);
+                } else {
+                    jQuery(id_button).fadeOut(duration);
+                }
+            });
+
+            jQuery(id_button).click(function (event) {
+                event.preventDefault();
+                jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                return false;
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -18,8 +42,10 @@
             <div class=" d-flex gap-5 align-items-center justify-content-between ">
                 <div class="nav-toggle">
                     <button class="rounded me-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
                         </svg>
                     </button>
                 </div>
@@ -32,10 +58,12 @@
                     </h1>
                 </div>
                 <div class="login-btn ms-5 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
                 </div>
                 <div data-module="weather-header" data-date_time_today="Thứ 2, 10/06/2024" class="weather-placeholder">
                     <div class="IGv0m1128tJ5jFbLBker UJHwOgU3bHCGwFvnmoEg">
@@ -65,26 +93,26 @@
             <div class="hnav">
                 <div class="d-flex">
                     <a href="#"
-                    class="international d-flex align-items-center justify-content-center text-decoration-none mx-2 text-dark">
-                    <img class="mx-1"
-                        src="https://cdnweb.dantri.com.vn/dist/static-dansinh-logo.1-0-1.9fc9db9740e6e6104af7.svg"
-                        alt="Dan sinh" width="19">
-                    <span class="title">Dân sinh</span>
-                </a>
-                <a href="#"
-                    class="international d-flex align-items-center justify-content-center text-decoration-none mx-2 text-dark">
-                    <img class="mx-1"
-                        src="https://cdnweb.dantri.com.vn/dist/static-fica-logo.1-0-1.2435f041ebf869641575.jpg"
-                        alt="Fica" width="26">
-                    <span class="title">Fica</span>
-                </a>
-                <a href="#"
-                    class="international d-flex align-items-center justify-content-center text-decoration-none mx-2 text-dark">
-                    <img class="mx-1"
-                        src="https://cdnweb.dantri.com.vn/dist/static-avatar-default.1-0-1.b474c6ca2d1abee5b89b.png"
-                        alt="DTNews" width="26">
-                    <span class="title">DTNews</span>
-                </a>
+                        class="international d-flex align-items-center justify-content-center text-decoration-none mx-2 text-dark">
+                        <img class="mx-1"
+                            src="https://cdnweb.dantri.com.vn/dist/static-dansinh-logo.1-0-1.9fc9db9740e6e6104af7.svg"
+                            alt="Dan sinh" width="19">
+                        <span class="title">Dân sinh</span>
+                    </a>
+                    <a href="#"
+                        class="international d-flex align-items-center justify-content-center text-decoration-none mx-2 text-dark">
+                        <img class="mx-1"
+                            src="https://cdnweb.dantri.com.vn/dist/static-fica-logo.1-0-1.2435f041ebf869641575.jpg"
+                            alt="Fica" width="26">
+                        <span class="title">Fica</span>
+                    </a>
+                    <a href="#"
+                        class="international d-flex align-items-center justify-content-center text-decoration-none mx-2 text-dark">
+                        <img class="mx-1"
+                            src="https://cdnweb.dantri.com.vn/dist/static-avatar-default.1-0-1.b474c6ca2d1abee5b89b.png"
+                            alt="DTNews" width="26">
+                        <span class="title">DTNews</span>
+                    </a>
                 </div>
             </div>
             <div class="header-area ">
@@ -100,8 +128,8 @@
                     </div>
                     <div>
                         <a class="search-link" href="/tim-kiem.htm">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#222" class="bi bi-search"
-                                viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#222"
+                                class="bi bi-search" viewBox="0 0 16 16">
                                 <path
                                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                             </svg>
@@ -130,15 +158,15 @@
             </li>
             <li class="nav-item menu">
                 <a href="#" class="nav-link">XÃ HỘI</a>
-                    <ol class="sub-menu bg-light">
-                        <li class="sub-menu-item"><a href="#" class="link">CHÍNH TRỊ</a></li>
-                        <li class="sub-menu-item"><a href="#" class="link">HỌC TẬP BÁC</a></li>
-                        <li class="sub-menu-item"><a href="#" class="link">KHÁT VỌNG HÙNG CƯỜNG</a></li>
-                        <li class="sub-menu-item"><a href="#" class="link">MÔI TRƯỜNG</a></li>
-                        <li class="sub-menu-item"><a href="#" class="link">GIAO THÔNG</a></li>
-                        <li class="sub-menu-item"><a href="#" class="link">NÓNG TRÊN MẠNG</a></li>
-                        <li class="sub-menu-item last"><a href="#" class="link">SÁNG KIẾN AN TOÀN GIAO THÔNG</a></li>
-                    </ol>
+                <ol class="sub-menu bg-light">
+                    <li class="sub-menu-item"><a href="#" class="link">CHÍNH TRỊ</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">HỌC TẬP BÁC</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">KHÁT VỌNG HÙNG CƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">MÔI TRƯỜNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">GIAO THÔNG</a></li>
+                    <li class="sub-menu-item"><a href="#" class="link">NÓNG TRÊN MẠNG</a></li>
+                    <li class="sub-menu-item last"><a href="#" class="link">SÁNG KIẾN AN TOÀN GIAO THÔNG</a></li>
+                </ol>
             </li>
             <li class="nav-item menu">
                 <a href="#" class="nav-link">THẾ GIỚI</a>
@@ -1801,7 +1829,8 @@
                 <p>Tổng biên tập: Phạm Tuấn Anh</p>
                 <p>Giấy phép hoạt động báo điện tử Dân trí số 411/GP - BTTTT Hà Nội, ngày 31-10-2023</p>
                 <p>Địa chỉ tòa soạn: Nhà 48, ngõ 2 Giảng Võ, Cát Linh, Đống Đa, Hà Nội</p>
-                <p>Điện thoại: <a href="#" class="link">024-3736-6491</a> . Hotline HN: <a href="#" class="link">0973-567-567</a></p>
+                <p>Điện thoại: <a href="#" class="link">024-3736-6491</a> . Hotline HN: <a href="#"
+                        class="link">0973-567-567</a></p>
                 <p>Văn phòng đại diện miền Nam: 51 Võ Văn Tần, Phường Võ Thị Sáu, Quận 3, TPHCM</p>
                 <p>Hotline TPHCM: <a class="link" href="#">0974-567-567</a></p>
                 <p>Email: <a class="link" href="#">info@dantri.com.vn</a>
@@ -1830,6 +1859,11 @@
         <p class="text-secondary">© 2005-2024 Bản quyền thuộc về Báo điện tử Dân trí. Cấm sao chép dưới mọi hình thức
             nếu không có sự chấp thuận bằng văn bản.</p>
     </footer>
+    <div class="scroll-top">
+        <div class="scroll-icon">
+            <a href="#" rel="nofollow" title=" ">^</a>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

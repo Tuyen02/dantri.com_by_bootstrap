@@ -1,4 +1,4 @@
-.IGv0m1128tJ5jFbLBker.UJHwOgU3bHCGwFvnmoEg {
+.weather-block.weather-block-display {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,7 @@
     line-height: 18px;
 }
 
-.IGv0m1128tJ5jFbLBker .ZfWACAKknj1VfFK4AMkD {
+.weather-block .weather-display {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
     height: 26px;
@@ -18,7 +18,7 @@
     background-color: rgb(214 214 214 / var(--tw-bg-opacity));
 }
 
-.IGv0m1128tJ5jFbLBker .zshi2lxvbjGHFsgp1DNy.V9Jp_oqNM6h30ard8Zgd {
+.weather-block .title-display.location {
     font-size: 13px;
     font-weight: 500;
     line-height: 17px;
@@ -26,12 +26,12 @@
     color: rgb(102 102 102 / var(--tw-text-opacity));
 }
 
-.IGv0m1128tJ5jFbLBker .zshi2lxvbjGHFsgp1DNy {
+.weather-block .title-display {
     display: block;
     text-align: right;
 }
 
-.IGv0m1128tJ5jFbLBker .zshi2lxvbjGHFsgp1DNy.wa8hsUSFvhh4lLAnvrBY {
+.weather-block .title-display.date {
     font-size: 13px;
     font-weight: 400;
     line-height: 14px;
@@ -40,7 +40,7 @@
     color: rgb(102 102 102 / var(--tw-text-opacity));
 }
 
-.IGv0m1128tJ5jFbLBker .zshi2lxvbjGHFsgp1DNy {
+.weather-block .title-display {
     display: block;
     text-align: right;
 }
@@ -218,4 +218,28 @@
 
 .nav-toggle, .login-btn{
     display: none;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    font-size: 17.5px;
+    line-height: 45px;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #050505;
+    background: #f9f9f9;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 50%;
+    display: block;
+}
+
+.scroll-top a {
+    color: #000000;
+    display: block;
+    height: 100%;
+    text-decoration: none;
 }
