@@ -3,7 +3,7 @@
 }
 
 @media only screen and (max-width: 780px) {
-    .weather-placeholder, .hnav, .header-area, nav,.nav-title,.scroll-top{
+    .weather-placeholder, .hnav, .header-area, nav,.nav-title, .scroll-top{
         display: none;
     }
 
@@ -26,7 +26,6 @@
     .login-btn{
         display: block;
     }
-
 }
 
 @media only screen and (max-width: 640px) {
